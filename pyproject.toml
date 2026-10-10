@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "real2sim-builder"
+version = "0.1.0"
+description = "Independent evidence-driven robotics scene reconstruction and dual-engine export"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "Pillow>=9", "PyYAML>=6", "opencv-python>=4.8"]
+
+[project.optional-dependencies]
+usd = ["usd-core>=24.11"]
+sim = ["mujoco>=3.3,<4"]
+ui = ["PyQt6>=6.5"]
+test = ["pytest>=7"]
+mesh = ["trimesh>=4"]
+
+[project.scripts]
+real2sim-builder = "app.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

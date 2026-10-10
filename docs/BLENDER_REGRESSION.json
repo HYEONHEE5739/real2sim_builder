@@ -1,0 +1,35 @@
+{
+  "blender": {
+    "available": true,
+    "executable": "/home/hyeonhee/apps/blender/blender",
+    "version": "Blender 5.2.2 LTS"
+  },
+  "baseline_train_mae": 0.24062671483523962,
+  "trial_train_mae": 0.24146492034313727,
+  "improved": false,
+  "parity": {
+    "status": "PASS",
+    "absolute_tolerance": 1e-05,
+    "relative_tolerance": 1e-05,
+    "checks": 2388,
+    "failures": [],
+    "hierarchy": "canonical frame graph is baked to equal world transforms; frame graph retained in manifest",
+    "scope": "exported structural geometry/camera parity; not Isaac runtime/photometric parity"
+  },
+  "publication": "UNVALIDATED",
+  "validation_needs": [
+    {
+      "need": "held-out object masks or measured corner landmarks for cube_blue, cube_green, cube_red, cup_a_visual, cup_b_visual, table",
+      "reason": "Global image similarity does not independently verify interaction-critical geometry"
+    }
+  ],
+  "canonical_restored": true,
+  "scope": "Real SO101 Blender build/author/render/compare/sync/MuJoCo render/promote/final validation/dual export/rollback",
+  "candidate": "/tmp/real2sim-agentic-build/projects/so101-reference-bb83b89f/scratch/agent/blender_verified",
+  "package": "/tmp/real2sim-agentic-build/projects/so101-reference-bb83b89f/exports/so101-reference-bb83b89f",
+  "tests": {
+    "passed": 45,
+    "skipped": 0,
+    "execution": "outside restricted sandbox"
+  }
+}

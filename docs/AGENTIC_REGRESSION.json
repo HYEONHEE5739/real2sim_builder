@@ -1,0 +1,28 @@
+{
+  "baseline_train_mae": 0.13358086107706968,
+  "candidate_train_mae": 0.13023925568491282,
+  "visual_improved": true,
+  "blender": {
+    "available": false,
+    "reason": "Blender executable not found; set REAL2SIM_BLENDER to an existing executable",
+    "requested": "blender"
+  },
+  "cross_engine_parity": {
+    "status": "PASS",
+    "absolute_tolerance": 1e-05,
+    "relative_tolerance": 1e-05,
+    "checks": 4157,
+    "failures": [],
+    "hierarchy": "canonical frame graph is baked to equal world transforms; frame graph retained in manifest",
+    "scope": "exported structural geometry/camera parity; not Isaac runtime/photometric parity"
+  },
+  "package_status": "UNVALIDATED",
+  "validation_needs": [
+    {
+      "need": "held-out object masks or measured corner landmarks for cube_blue, cube_green, cube_red, cup_a_visual, cup_b_visual, table",
+      "reason": "Global image similarity does not independently verify interaction-critical geometry"
+    }
+  ],
+  "original_canonical_restored": true,
+  "scope": "SO101 copy: MuJoCo candidate render/compare/promote/rollback + dual export; Blender unavailable, not end-to-end validated"
+}

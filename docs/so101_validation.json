@@ -1,0 +1,41 @@
+{
+  "project": "so101-reference-bb83b89f",
+  "status": "NEEDS_MORE_DATA",
+  "needs": [
+    {
+      "need": "held-out object masks or measured corner landmarks for cube_blue, cube_green, cube_red, cup_a_visual, cup_b_visual, table",
+      "reason": "Global image similarity does not independently verify interaction-critical geometry"
+    }
+  ],
+  "images": [
+    {
+      "camera": "side",
+      "mae": 0.13343984460103483,
+      "edge_iou": 0.04654396186440678
+    },
+    {
+      "camera": "wrist",
+      "mae": 0.1507589273556645,
+      "edge_iou": 0.0008241758241758242
+    }
+  ],
+  "package_status": "UNVALIDATED",
+  "engines": {
+    "mujoco": {
+      "loaded": true,
+      "ngeom": 555
+    },
+    "usd": {
+      "loaded": true,
+      "prims": 649
+    }
+  },
+  "source_unchanged": true,
+  "source_hashes": {
+    "/home/hyeonhee/soarm_isaaclab/soarm101_lab/outputs/real2sim/environments/workspace_001/v2/profile.json": "b0a3dc668317f4cc5ba58dbb15c0df614a234bffae1ce7e6321e7cfa2b5fae08",
+    "/home/hyeonhee/soarm_isaaclab/soarm101_lab/outputs/real2sim/captures/session_20260919_121858_8945750b43f24e6e8ccc79854fd84182/capture_000001/state.json": "63930c975e9e343a1791c792f388d267656345bf93f0f7914149374adc128253",
+    "/home/hyeonhee/soarm_isaaclab/soarm101_lab/outputs/real2sim/captures/session_20260919_121858_8945750b43f24e6e8ccc79854fd84182/capture_000001/real_side.png": "c52de1be13a80d7fb964723c28efcaf623b1f597841f5bd3be3d958b263bd0b5",
+    "/home/hyeonhee/soarm_isaaclab/soarm101_lab/outputs/real2sim/captures/session_20260919_121858_8945750b43f24e6e8ccc79854fd84182/capture_000001/real_wrist.png": "fe4d0c953ee16724d5572fc5e41ba588b7cb9b092c02d94c1388bd5d98135b4e"
+  },
+  "note": "Real SO-101 capture, inherited calibration/FK, independent geometry validation is missing. This candidate is NOT accepted."
+}
